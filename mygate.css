@@ -1,0 +1,473 @@
+*{margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 900vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 86px;
+    max-height: 767px;
+    object-fit: contain;
+    width: 100%;
+}
+/*header*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: white;
+    align-items: center;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+.logo {
+    position: relative;
+    left: -2%;
+    
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    position: relative;
+    float: left;
+}
+.navbar ul li a{
+    font-size: 20px;
+    padding: 10px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.navbar ul li ul{
+    position: absolute;
+    top: 60px;
+    right:0;
+    width: 250px;
+    background: white;
+    border-radius: 8px;
+    box-sizing: content-box;
+    display:none;
+}
+.navbar ul li:hover ul{
+    display: block;
+
+}
+li button{
+    background: red;
+    position: fixed;
+    right: 0px;
+    margin: 1px;
+    width: 90px;
+    height: 3vw;
+    border-radius: 10px;
+    color: white;
+    box-sizing: content-box;
+    border: transparent;
+}
+.banner{
+    position: relative;
+   
+}
+.bannerphoto{
+    max-height: 767px;
+    background-image: linear-gradient(to right,#f6d8d6);
+}
+.generalinfo{
+    margin: 0;
+    width: 100%;
+}
+.section-inner-general-row{
+    display: block;
+    padding: 60px;
+background: beige;
+
+}
+.general-card{
+    position: static;
+    padding: 5px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;   
+}
+.general-picture{
+  padding-left: 70px;
+  max-width: 0;
+  
+}
+.general-picture img{
+    border-radius: 50%;
+    height: 70px;
+    width: 75px;
+    padding: 0;
+    transition: all .7scn;
+}
+.general-content{
+    padding: 10spx 2px;
+    font-size: 20px;
+}
+/* .group-ad{
+    background: linear-gradient(#fff 80%, #f8f8f8 30%);
+    position: relative;
+} */
+.section-inner{
+    min-width: 700px;
+    width: 1195px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 78px 0;
+}
+.text{
+    text-align: center;
+    margin: 0%;
+    font-size: 32px;
+    font-family: 'serif';
+}
+.sub-title{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0 50px;
+    color: #565656;
+}
+.row{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.work{
+    flex: 1;
+    background: white;
+    margin-left: -30px;
+    margin-right: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,.6);
+    border-radius: 3px;
+    
+}
+.work-body h2{
+    font-weight: 700;
+    margin: 0;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.work-body a{
+    text-decoration: none;
+    color: #0077b3;
+}
+.work-body p{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 25px;
+    min-height: 80px;
+    text-transform: capitalize;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+.work .more{
+    display: block;
+    color: red;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: poppins-bold-700;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.header{
+    background: red;
+    background-color: none;
+}
+/* .video-design{
+    position: relative;
+} */
+.videoo video{
+    width: 880px;
+    height: 508px;
+    margin-left: 220px;
+    border-radius: 15px;
+}
+/* .query-header{
+    width: 100%;
+    padding: 50px 0px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+} */
+#query-heading{
+    
+    width: 100%;
+    padding: 50px 0px;
+    margin: auto;
+    text-align: center;
+    padding-top:40x;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 8px;   
+}
+.queryp{
+    margin: auto;
+    line-height: 15px;
+    text-align: center;
+    padding-top: -100px;  
+    font-family: poppins-bold-700;
+}
+/* .query-flex{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: center;
+    width: 1168px;
+} */
+.query-list{
+    flex: 1 1 48%;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.query-list ul{
+    font-size: 27px;
+    text-align: left;
+    text-transform: none;
+    width: 100%;
+    line-height: 20px;
+    list-style: none;
+}
+.query-list ul .border {
+    border-bottom: 2px solid black;
+    padding: 0px;
+    margin: 20px 0px;
+    margin-right: 70%;
+}
+span1{
+    
+margin-left: 169px;
+}
+span2{
+   
+margin-left: 106px;
+}
+span3{
+    
+margin-left: 89px;
+}
+span4{
+   
+margin-left: 155px;
+}
+span5{
+    
+margin-left: 37px;
+}
+.query-flex img{
+    margin-left: 40%;
+    margin-top: -339px;
+}
+.busniess-ad{
+    width: 1195px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* .brands-ads{
+margin: auto;
+padding: 100px 0 30px;
+position: relative;
+} */
+.ad-1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+.ad-2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 27px;
+    width: 756px;
+    margin: 10px auto 78px;
+}
+.brand-row1{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    display: grid;   
+}
+.brand-row1 a{
+    background: whitesmoke;
+    align-items: center;
+    font-size: 100px;
+}
+a.learn{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+}
+.brand-row1 img{
+    margin-left: 60px;
+    background: none;
+}
+.brand-row1 .learn{
+    background: orange;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px;
+}
+span{
+    color: white;
+}
+.customer-main{
+    text-align: center;
+    overflow: hidden;
+    width: 1195px;
+    position: static;
+    margin: auto;
+} 
+.customer-heading{
+    font-size: 32px;
+    line-height: 40px;
+    margin: 50px 0 70px;
+    text-align: center;
+}
+
+.customer-content{
+    padding: 0 20px;
+}
+.slider{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin:  0 auto;
+    column-gap: 3%;
+}
+.ourjourney{
+    box-sizing: inherit;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.customer-review{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+}
+.customer-review img{
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    left: 0;
+    right: 0;
+    top: -10px;
+    margin: auto;
+    width: 90px;
+    transition: all .3s;
+}
+.customer{
+    width: 31%;
+}
+.customer-info{
+    padding: 100px 30px 30px;
+    font-size: 15px;
+    height: 365px;
+    overflow: hidden;
+    background: white;
+}
+.customer-name{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+}
+.customer-position{
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+p{
+    line-height: 1.5;
+}
+.news-logos{
+    position: static;
+}
+.news-logo-section{
+    width: 100%;
+    display: flex;
+}
+.news-logo-section img{
+    width: 19%;
+}
+.book-header{
+    padding-top: 80px;
+}
+.book-para{
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.form-input{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
+    row-gap: 50px;
+    position: static;
+}
+.form-input input{
+    background: lightgray;
+    width: 450px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 80px;
+    display: flex;
+        
+}
+.submit button{
+    background: orange;
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.ending-content{
+    margin-left: 0px;
+    text-align: center;
+    width: 1167px;
+    text-align: justify;
+}
+.ending-content h5{
+    
+    margin: 2.9rem auto 2.0rem;
+    font-size: 1.6rem;
+}
+.ending-content strong{
+    font-size: 1.2rem;
+}
+.ending-content p{
+    font-style: normal;
+    line-height: 1.5;
+    font-size: 20px;
+}
